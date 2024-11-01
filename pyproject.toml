@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "30-dias-de-python"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+humanize = "^4.11.0"
+
+
+[tool.poetry.group.dia_03.dependencies]
+httpx = "^0.27.2"
+pytest = "^8.3.3"
+respx = "^0.21.1"
+
+
+[tool.poetry.group.dia_04.dependencies]
+humanize = "^4.11.0"
+
+
+[tool.poetry.group.all.dependencies]
+ipython = "^8.29.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
