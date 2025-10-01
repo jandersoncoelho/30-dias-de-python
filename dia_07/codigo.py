@@ -1,3 +1,6 @@
+from dataclasses import dataclass
+
+
 def romeu_e_julieta(val: int):  # SUT
     """
     Param:
@@ -23,7 +26,6 @@ def romeu_e_julieta(val: int):  # SUT
 
 
 # Caso 2 Schema ---------------------------
-from dataclasses import dataclass
 
 
 @dataclass
@@ -68,7 +70,7 @@ class ListaDeTarefas:
         for tarefa in self.tarefas:
             if tarefa.id == identificador:
                 self.tarefas.remove(tarefa)
-            break
+                break
 
     def recuperar_tarefa(self, identificador: int) -> Tarefa | None:
         for tarefa in self.tarefas:
